@@ -19,13 +19,13 @@ const DisplayAlbum = () => {
             {albumData?.name}
           </h2>
           <h4>{albumData?.desc}</h4>
-          <p className="mt-1">
+          <p className="mt-1 flex items-center justify-between gap-2">
             <img
               className="inline-block w-5"
               src={assets?.spotify_logo}
               alt="logo"
             />
-            <b>Spotify</b>. 1,323,123 likes . <b>50 songs,</b>
+            <b className="ml-2">Spotify</b>. 1,323,123 likes . <b>50 songs,</b>
             about 2 hour 30 min
           </p>
         </div>
@@ -47,9 +47,9 @@ const DisplayAlbum = () => {
             className=" cursor-pointer grid grid-cols-3 sm:grid-cols-4 gap-2 p-2 items-center text-[#a7a7a7] hover:bg-[#ffffff2b]"
           >
             <p className="text-white">
-                <b>{index + 1}</b>
-                <img  className="inline w-10 ml-4" src = {items.image} alt = "image"/>
-               <span className="ml-2"> {items?.name}</span>
+              <b>{index + 1}</b>
+              <img className="inline w-10 ml-4" src={items.image} alt="image" />
+              <span className="ml-2"> {items?.name}</span>
             </p>
             <p className="text-[15px]">{albumData?.name}</p>
             <p className="text-[15px] hidden sm:block">{albumData?.name}</p>
